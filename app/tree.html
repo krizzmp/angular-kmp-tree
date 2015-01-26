@@ -1,0 +1,11 @@
+<div class="linef" draggable="true" dropzone="move">
+    <pre class="icon" ng-click="ctrl.hidden=!ctrl.hidden">{{ctrl.g}}</pre>
+
+    <ng-transclude-replace></ng-transclude-replace>
+</div>
+
+<kmp-tree ng-repeat="thing in ctrl.things.children" things="thing"
+          ng-hide="ctrl.hidden" g="{{ctrl.h($index)}}" >
+
+    <ng-transclude-replace></ng-transclude-replace>
+</kmp-tree>

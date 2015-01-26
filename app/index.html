@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body ng-app="app">
+<!--<split-pane horizontal>-->
+    <!--<pane borderless>-->
+        <!--<split-pane>-->
+            <!--<pane>-->
+                <div class="outer">
+                    <div class="tree" ng-controller="mainCtrl as ctrl">
+                        <kmp-tree things="ctrl.things" g="└⊟">
+                            <span class="line">{{ctrl.things.name}}</span>
+                        </kmp-tree>
+                    </div>
+                </div>
+            <!--</pane>-->
+            <!--<pane>g</pane>-->
+        <!--</split-pane>-->
+    <!--</pane>-->
+    <!--<pane>g</pane>-->
+<!--</split-pane>-->
+
+
+
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-recursion/angular-recursion.js"></script>
+<script src="../split-pane/app.js"></script>
+<script src="kmp-tree.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

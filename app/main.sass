@@ -1,0 +1,21 @@
+$baseBG: #484848
+$stripe: #505050
+$borderColor: #464646
+$lineHeight: 20px
+@import "tree.sass"
+@import "border-box"
+@import "../split-pane/main"
+
+split-pane
+  background: $baseBG
+  //border: 1px solid #000000
+  //width: 300px
+  flex: 1
+  .content
+    border: 1px solid #000000
+pane[borderless]> .content
+  border: none
+.outer
+  flex: 1
+
+
